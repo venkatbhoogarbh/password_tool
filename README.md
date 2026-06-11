@@ -1,3 +1,3 @@
 # password_validator
 
-Still under development
+Requires testing
