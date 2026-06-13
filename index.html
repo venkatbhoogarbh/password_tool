@@ -9,9 +9,7 @@
 <body>
 
   <div class="container">
-    <h1>Password Tool 🔐</h1>
-
-    <!-- Password Strength Checker -->
+    <h1>Password Tool</h1>
     <div class="card">
       <h2>Check Password Strength</h2>
       <input type="password" id="passwordInput" placeholder="Enter password" />
@@ -20,16 +18,12 @@
         <div id="strengthBar"></div>
       </div>
     </div>
-
-    <!-- Password Generator -->
     <div class="card">
       <h2>Generate Password</h2>
-
       <label>
         Password Length:
         <span id="lengthValue" class="length-value"></span>
       </label>
-
       <input type="range" id="length" min="10" max="60" value="15"/>
 
       <div class="options">
@@ -38,14 +32,11 @@
         <label><input type="checkbox" id="number" checked /> Numbers</label>
         <label><input type="checkbox" id="symbol" checked /> Symbols</label>
       </div>
-
       <button onclick="generate()">Generate</button>
       <input type="text" id="generatedPassword" readonly />
-      <button onclick="copyPassword()" id="copyBtn" style="display:none;">📋 Copy</button>
+      <button onclick="copyPassword()" id="copyBtn" style="display:none;">Copy</button>
     </div>
   </div>
-
-  <!-- SCRIPT MUST BE AT BOTTOM -->
   <script src="script.js"></script>
 </body>
 </html>
